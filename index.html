@@ -15,7 +15,6 @@
 <!-- notification for small viewports and landscape oriented smartphones -->
 <div class="device-notification">
   <a class="device-notification--logo" href="#0">
-<!--    <img src="assets/img/logo.png" alt="Kamalig">-->
     <p>Kamalig</p>
   </a>
   <p class="device-notification--message">Kamalig has so much to offer that we must request you orient your device to portrait or find a larger screen. You won't be disappointed.</p>
@@ -146,7 +145,7 @@
                   <i class="fab fa-angular" style="font-size: 50px; color: #DD0031; padding-right: 20px;"></i>
                   <i class="fab fa-microsoft" style="font-size: 50px; color: #5E5E5E; padding-right: 20px;"></i>
                   <i class="fab fa-php" style="font-size: 50px; color: #777BB4; padding-right: 20px;"></i>
-                  <i class="fab fa-windows" style="font-size: 50px; color: #00A4EF; padding-right: 20px;"></i>
+                  <i class="fab fa-html5" style="font-size: 50px; color: #00A4EF; padding-right: 20px;"></i>
                   <i class="fas fa-database" style="font-size: 50px; color: #FCC624;"></i>
                 </div>
               </div>
@@ -157,7 +156,7 @@
                 <div class="modal">
                   <div class="modal--information">
                     <p> Km. 53 1, Calamba, 4029 Laguna</p>
-                    <a href="joshua.pardo30@gmail.com">joshua.pardo30@gmail.com</a>
+                    <a href="mailto:joshua.pardo30@gmail.com">joshua.pardo30@gmail.com</a>
                     <a href="tel:+639564870057">+639564870057</a>
                   </div>
                   <ul class="modal--options">
@@ -171,73 +170,24 @@
           <li class="l-section section">
             <div class="hire">
               <h2>You want us to do</h2>
-              <!-- checkout formspree.io for easy form setup -->
-              <form class="work-request">
+              <form id="work-request-form" class="work-request" onsubmit="sendMail(event)">
                 <div class="work-request--options">
-                  <span class="options-a">
-                    <input id="opt-1" type="checkbox" value="app design">
-                    <label for="opt-1">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Web Development
-                    </label>
-                    <input id="opt-2" type="checkbox" value="graphic design">
-                    <label for="opt-2">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      App Development
-                    </label>
-                    <input id="opt-3" type="checkbox" value="motion design">
-                    <label for="opt-3">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      IT Consultancy
-                    </label>
-                  </span>
+        <span class="options-a">
+          <input id="opt-1" type="checkbox" value="app design">
+          <label for="opt-1">Web Development</label>
+          <input id="opt-2" type="checkbox" value="graphic design">
+          <label for="opt-2">App Development</label>
+          <input id="opt-3" type="checkbox" value="motion design">
+          <label for="opt-3">IT Consultancy</label>
+        </span>
                   <span class="options-b">
-                    <input id="opt-4" type="checkbox" value="ux design">
-                    <label for="opt-4">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      UI/UX Design
-                    </label>
-                    <input id="opt-5" type="checkbox" value="webdesign">
-                    <label for="opt-5">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Webdesign
-                    </label>
-                    <input id="opt-6" type="checkbox" value="marketing">
-                    <label for="opt-6">
-                      <svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
-                      viewBox="0 0 150 111" style="enable-background:new 0 0 150 111;" xml:space="preserve">
-                      <g transform="translate(0.000000,111.000000) scale(0.100000,-0.100000)">
-                        <path d="M950,705L555,310L360,505C253,612,160,700,155,700c-6,0-44-34-85-75l-75-75l278-278L550-5l475,475c261,261,475,480,475,485c0,13-132,145-145,145C1349,1100,1167,922,950,705z"/>
-                      </g>
-                      </svg>
-                      Marketing
-                    </label>
-                  </span>
+          <input id="opt-4" type="checkbox" value="ux design">
+          <label for="opt-4">UI/UX Design</label>
+          <input id="opt-5" type="checkbox" value="webdesign">
+          <label for="opt-5">Webdesign</label>
+          <input id="opt-6" type="checkbox" value="marketing">
+          <label for="opt-6">Marketing</label>
+        </span>
                 </div>
                 <div class="work-request--information">
                   <div class="information-name">
@@ -253,6 +203,8 @@
               </form>
             </div>
           </li>
+
+
         </ul>
       </div>
     </div>
@@ -265,7 +217,23 @@
     <li>Hire us</li>
   </ul>
 </div>
+<script>
+  function sendMail() {
+    const name = document.getElementById('name').value;
+    const email = document.getElementById('email').value;
 
+    const options = [];
+    document.querySelectorAll('.work-request input[type="checkbox"]:checked').forEach((checkbox) => {
+      options.push(checkbox.value);
+    });
+
+    const subject = 'Work Request';
+    const body = `Name: ${name}\nEmail: ${email}\nOptions: ${options.join(', ')}`;
+
+    const mailtoLink = `mailto:joshua.pardo30@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    window.location.href = mailtoLink;
+  }
+</script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
 <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-2.2.4.min.js"><\/script>')</script>
 <script src="assets/js/functions-min.js"></script>
