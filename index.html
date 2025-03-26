@@ -59,15 +59,15 @@
                 <img src="assets/img/introduction-visual.png" alt="Welcome">
               </div>
               <div class="intro--options">
-                <a href="#0">
-                  <h3>Angular</h3>
-                  <p>Inventory Management System powered by ASP and Angular</p>
+                <a href="https://teacheraprogressup.com/">
+                  <h3>Teacher A House of Development</h3>
+                  <p>Cloud Based Laravel Attendance Web Server + Flutter App</p>
                 </a>
-                <a href="#0">
+                <a href="https://www.facebook.com/PSQInc">
                   <h3>Philippines Society for Quality</h3>
                   <p>Membership Management System powered by Laravel</p>
                 </a>
-                <a href="#0">
+                <a href="https://www.facebook.com/mtfxmotofix">
                   <h3>Motofix Trading</h3>
                   <p>Inventory Management System powered by C#</p>
                 </a>
@@ -197,42 +197,42 @@
               </div>
             </div>
           </li>
-          <li class="l-section section">
-            <div class="hire">
-              <h2>You want us to do</h2>
-              <form id="work-request-form" class="work-request" onsubmit="sendMail(event)">
-                <div class="work-request--options">
-        <span class="options-a">
-          <input id="opt-1" type="checkbox" value="app design">
-          <label for="opt-1">Web Development</label>
-          <input id="opt-2" type="checkbox" value="graphic design">
-          <label for="opt-2">App Development</label>
-          <input id="opt-3" type="checkbox" value="motion design">
-          <label for="opt-3">IT Consultancy</label>
-        </span>
-                  <span class="options-b">
-          <input id="opt-4" type="checkbox" value="ux design">
-          <label for="opt-4">UI/UX Design</label>
-          <input id="opt-5" type="checkbox" value="webdesign">
-          <label for="opt-5">Webdesign</label>
-          <input id="opt-6" type="checkbox" value="marketing">
-          <label for="opt-6">Marketing</label>
-        </span>
-                </div>
-                <div class="work-request--information">
-                  <div class="information-name">
-                    <input id="name" type="text" spellcheck="false">
-                    <label for="name">Name</label>
-                  </div>
-                  <div class="information-email">
-                    <input id="email" type="email" spellcheck="false">
-                    <label for="email">Email</label>
-                  </div>
-                </div>
-                <input type="submit" value="Send Request">
-              </form>
-            </div>
-          </li>
+         <li class="l-section section">
+           <div class="hire">
+             <h2>You want us to do</h2>
+             <form id="work-request-form" class="work-request" onsubmit="sendMail(event)">
+               <div class="work-request--options">
+                 <span class="options-a">
+                   <input id="opt-1" type="checkbox" value="app design">
+                   <label for="opt-1">Web Development</label>
+                   <input id="opt-2" type="checkbox" value="graphic design">
+                   <label for="opt-2">App Development</label>
+                   <input id="opt-3" type="checkbox" value="motion design">
+                   <label for="opt-3">IT Consultancy</label>
+                 </span>
+                 <span class="options-b">
+                   <input id="opt-4" type="checkbox" value="ux design">
+                   <label for="opt-4">UI/UX Design</label>
+                   <input id="opt-5" type="checkbox" value="webdesign">
+                   <label for="opt-5">Webdesign</label>
+                   <input id="opt-6" type="checkbox" value="marketing">
+                   <label for="opt-6">Marketing</label>
+                 </span>
+               </div>
+               <div class="work-request--information">
+                 <div class="information-name">
+                   <input id="name" type="text" spellcheck="false">
+                   <label for="name">Name</label>
+                 </div>
+                 <div class="information-email">
+                   <input id="email" type="email" spellcheck="false">
+                   <label for="email">Email</label>
+                 </div>
+               </div>
+               <input type="submit" value="Send Request">
+             </form>
+           </div>
+         </li>
 
 
         </ul>
@@ -248,13 +248,15 @@
   </ul>
 </div>
 <script>
-  function sendMail() {
+  function sendMail(event) {
+    event.preventDefault();
+
     const name = document.getElementById('name').value;
     const email = document.getElementById('email').value;
 
     const options = [];
     document.querySelectorAll('.work-request input[type="checkbox"]:checked').forEach((checkbox) => {
-      options.push(checkbox.value);
+      options.push(checkbox.nextElementSibling.textContent);
     });
 
     const subject = 'Work Request';
